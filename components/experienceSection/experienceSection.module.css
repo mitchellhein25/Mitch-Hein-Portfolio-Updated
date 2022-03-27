@@ -36,6 +36,7 @@
     text-align: center;
     margin: 10px;
     font-weight: 300;
+    color: #0E83B8;
 }
 
 .detailRow {
@@ -43,16 +44,54 @@
     flex-direction: row;
 }
 
-.detailCard {
+.lisamDetailCard, .freelanceDetailCard {
     border-radius: 20px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     text-align: justify;
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto;
+    width: 30%;
+}
+
+.lisamDetailCard {
+    height: 175px;
+}
+
+.freelanceDetailCard {
+    height: 175px;
+}
+
+.lisamDetailCard:hover {
+    background-color: #0E83B8;
+    color: white;
 }
 
 .cardHeader {
     text-align: center;
     font-size: 1.2rem;
     margin: 0;
+}
+
+.frameworkUsed {
+    color: gray;
+    font-weight: 300;
+}
+
+.extLink {
+   color: #0E83B8;
+   text-align: center;
+   font-size: 1.2rem;
+}
+
+.extLink:hover {
+    text-decoration: underline;
+    color: black;
+    font-weight: 600;
+}
+
+.cfaRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
 }

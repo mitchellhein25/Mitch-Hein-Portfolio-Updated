@@ -33,10 +33,15 @@ const Home: NextPage = () => {
                     height={98}
                 />
             </div>
+            <hr className={styles.border}></hr>
             <ExperienceSection></ExperienceSection>
+            <hr className={styles.border}></hr>
             <SkillsSection></SkillsSection>
+            <hr className={styles.border}></hr>
             <EducationSection></EducationSection>
+            <hr className={styles.border}></hr>
             <ProjectsSection></ProjectsSection>
+            <hr className={styles.border}></hr>
             <ResumeSection></ResumeSection>
         </MainLayout>
     )

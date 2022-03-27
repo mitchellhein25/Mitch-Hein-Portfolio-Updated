@@ -11,3 +11,11 @@
 .orange {
     color: #f17936;
 }
+
+.border {
+    height: 10px;
+    background-color: black;
+    border: none;
+    margin-top: 58px;
+    border-radius: 70%;
+}
