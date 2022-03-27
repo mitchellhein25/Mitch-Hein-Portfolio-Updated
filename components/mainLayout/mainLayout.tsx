@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import NavBar from '../../components/navBar/navBar'
+import styles from './mainLayout.module.css'
 
 export const links = [
     { name: 'Experience', link: '/experience' },
@@ -25,7 +26,7 @@ export default function MainLayout({ children }:Children) {
                 <title>{pageTitle}</title>
                 <link rel="shortcut icon" href="/icons/favicon.svg" />
             </Head>
-            <main>{children}</main>
+            <main className={styles.mainContainer}>{children}</main>
         </div>
     )
 }

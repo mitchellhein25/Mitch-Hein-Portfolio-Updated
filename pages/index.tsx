@@ -5,6 +5,8 @@ import MainLayout from '../components/mainLayout/mainLayout'
 import ExperienceSection from '../components/experienceSection/experienceSection'
 import SkillsSection from '../components/skillsSection/skillsSection'
 import EducationSection from '../components/educationSection/educationSection'
+import ProjectsSection from '../components/projectsSection/projectsSection'
+import ResumeSection from '../components/resumeSection/resumeSection'
 
 const Home: NextPage = () => {
     return (
@@ -25,15 +27,17 @@ const Home: NextPage = () => {
             </div>
             <div className={styles.center}>
                 <Image
-                    src='/images/Lisam_Logo.png'
+                    src='/images/Lisam_Logo_cropped.png'
                     alt='Lisam Systems Logo'
-                    width={200}
-                    height={200}
+                    width={199}
+                    height={98}
                 />
             </div>
             <ExperienceSection></ExperienceSection>
             <SkillsSection></SkillsSection>
             <EducationSection></EducationSection>
+            <ProjectsSection></ProjectsSection>
+            <ResumeSection></ResumeSection>
         </MainLayout>
     )
 }

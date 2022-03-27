@@ -28,7 +28,7 @@ export default function NavBar({ websiteTitle, links }: NavBarProps) {
                             {/*    width={50}*/}
                             {/*    height={50}*/}
                             {/*/>*/}
-                            <a className={navBarStyles.link}>{websiteTitle}</a>
+                            <a className={navBarStyles.link + ' ' + navBarStyles.webTitle}>{websiteTitle}</a>
                         </div>
                     </Link>
                 </li>
