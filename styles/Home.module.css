@@ -1,0 +1,13 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue {
+    color: #0E83B8;
+}
+
+.orange {
+    color: #f17936;
+}

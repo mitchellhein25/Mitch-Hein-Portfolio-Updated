@@ -1,0 +1,70 @@
+
+.container {
+    height: auto;
+    caret-color: transparent;
+}
+
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.li {
+    display: inline-block;
+}
+
+.title {
+    float: left;
+    margin-left: 30px;
+}
+
+.logoSection {
+    display: flex;
+    cursor: pointer;
+}
+
+.link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    text-decoration: none;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+.navLinks {
+    float: right;
+    margin-right: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .link {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .link {
+        font-size: 1.2rem;
+    }
+}
