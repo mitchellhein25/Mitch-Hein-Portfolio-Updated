@@ -7,10 +7,13 @@ import SkillsSection from '../components/skillsSection/skillsSection'
 import EducationSection from '../components/educationSection/educationSection'
 import ProjectsSection from '../components/projectsSection/projectsSection'
 import ResumeSection from '../components/resumeSection/resumeSection'
+import ContactInfo from '../components/contactInfo/contactInfo'
 
 const Home: NextPage = () => {
     return (
         <MainLayout>
+            <div className={styles.topMargin}></div>
+            <ContactInfo></ContactInfo>
             <div className={styles.center}>
                 <h1><span className={styles.blue}>Software Developer</span> from College Station, TX</h1>
             </div>

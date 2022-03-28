@@ -3,11 +3,12 @@ import NavBar from '../../components/navBar/navBar'
 import styles from './mainLayout.module.css'
 
 export const links = [
-    { name: 'Experience', link: '/experience' },
-    { name: 'Skills', link: '/skills' },
-    { name: 'Education', link: '/education' },
-    { name: 'Projects', link: '/projects' },
-    { name: 'Resume', link: '/resume' },
+    { name: 'Contact', link: '#contact' },
+    { name: 'Experience', link: '#experience' },
+    { name: 'Skills', link: '#skills' },
+    { name: 'Education', link: '#education' },
+    { name: 'Projects', link: '#projects' },
+    { name: 'Resume', link: '#resume' },
 ]
 
 export const websiteTitle = 'Mitch Hein';

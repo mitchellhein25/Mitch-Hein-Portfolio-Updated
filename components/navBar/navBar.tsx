@@ -34,19 +34,17 @@ export default function NavBar({ websiteTitle, links }: NavBarProps) {
                 </li>
                 <div className={navBarStyles.navLinks}>
                     {width >= breakpoint ?
-                                links.map((link) => (
-                                    <li className={navBarStyles.li} key={link.name}>
-                                        <Link href={link.link}>
-                                            <a className={navBarStyles.link}>{link.name}</a>
-                                        </Link>
-                                    </li>
-                                ))
+                        links.map((link) => (
+                            <li className={navBarStyles.li} key={link.name}>
+                                <a href={link.link} className={navBarStyles.link}>{link.name}</a>
+                            </li>
+                        ))
                         :
-                        <div>
+                        <div>W
                             {open ?
                                 <div>
                                     <Image
-                                        src='/icons/hamburger-menu.svg'
+                                        src='/images/hamburger-menu.svg'
                                         alt='Mobile navigation menu button'
                                         width={40}
                                         height={40}
@@ -57,14 +55,14 @@ export default function NavBar({ websiteTitle, links }: NavBarProps) {
                                 :
                                 <div>
                                     <Image
-                                        src='/icons/exit.svg'
+                                        src='/images/exit.svg'
                                         alt='Exit navigation menu button'
                                         width={30}
                                         height={30}
                                         onClick={() => setOpen(!open)}
                                         className={navBarStyles.transition}
                                     />
-                                    <MobileMenu websiteTitle={websiteTitle} links={links}></MobileMenu>
+                                    <MobileMenu links={links}></MobileMenu>
                                 </div>
                                 }
                         </div>

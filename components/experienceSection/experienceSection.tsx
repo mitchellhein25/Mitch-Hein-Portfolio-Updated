@@ -2,7 +2,7 @@ import styles from './experienceSection.module.css'
 
 export default function ExperienceSection({ }) {
     return (
-        <div className={styles.sectionContainer}>
+        <div id="experience" className={styles.sectionContainer}>
             <h2 className={styles.sectionHeader}>Experience</h2>
             <div>
                 <h3 className={styles.subHeader}>Product Developer &nbsp; <span className={styles.gray}>@ Lisam Systems</span></h3>
