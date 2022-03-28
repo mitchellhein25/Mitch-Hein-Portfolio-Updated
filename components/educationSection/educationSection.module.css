@@ -1,11 +1,56 @@
 .sectionHeader {
     color: #0E83B8;
     font-size: 70px;
+    margin-bottom: 20px;
 }
 
 .sectionContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: /*black*/;
+    flex-direction: column;
+    /*background-color: black;*/
+}
+
+.subHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.dates {
+    font-size: 1.5rem;
+    font-family: Consolas;
+    font-weight: 400;
+    margin: 20px;
+}
+
+.detailRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.detailCard, .pictureCard {
+    display: flex;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.detailCard:hover {
+    background-color: #0E83B8;
+    color: white;
+}
+
+.cardHeader {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
 }

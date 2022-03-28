@@ -1,11 +1,13 @@
 .sectionHeader {
     color: #0E83B8;
     font-size: 70px;
+    margin-bottom: 20px;
 }
 
 .sectionContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: /*black*/;
+    flex-direction: column;
+    /*background-color: black;*/
 }

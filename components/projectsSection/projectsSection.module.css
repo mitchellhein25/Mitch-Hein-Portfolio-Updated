@@ -1,11 +1,57 @@
 .sectionHeader {
     color: #0E83B8;
     font-size: 70px;
+    margin-bottom: 20px;
 }
 
 .sectionContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: /*black*/;
+    flex-direction: column;
+    /*background-color: black;*/
+}
+
+.detailRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.detailCard {
+    display: flex;
+    border-radius: 20px;
+    /*box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;*/
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*.detailCard:hover {
+    background-color: #0E83B8;
+    color: white;
+}*/
+
+.cardHeader {
+    text-align: center;
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+.extLink {
+    color: #0E83B8;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;   
+}
+
+.extLink:hover {
+    text-decoration: underline;
+    color: black;
+    font-weight: 600;
 }
