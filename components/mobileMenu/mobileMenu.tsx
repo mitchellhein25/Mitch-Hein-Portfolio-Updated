@@ -2,9 +2,11 @@ import mobileMenuStyles from './mobileMenu.module.css'
 
 interface Props {
     links: Array<{ name: string, link: string }>
+    open: Boolean
+    setOpen: Function
 }
 
-export default function MobileMenu({ links }: Props) {
+export default function MobileMenu({ links, open, setOpen }: Props) {
     console.log(links);
     return (
         <div className={mobileMenuStyles.container}>
@@ -13,7 +15,7 @@ export default function MobileMenu({ links }: Props) {
                     {
                         links.map((link) => (
                         <li className={mobileMenuStyles.li} key={link.name}>
-                            <a href={link.link} className={mobileMenuStyles.link}>{link.name}</a>
+                            <a onClick={() => setOpen(!open)} href={link.link} className={mobileMenuStyles.link}>{link.name}</a>
                         </li>
                     ))
                     }

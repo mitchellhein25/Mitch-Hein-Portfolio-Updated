@@ -1,6 +1,6 @@
 .sectionHeader {
     color: #0E83B8;
-    font-size: 70px;
+    font-size: 5rem;
     margin-bottom: 20px;
     padding-top: 50px;
 }
@@ -17,8 +17,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .gray {
@@ -26,16 +26,14 @@
 }
 
 .dates {
-    font-size: 1.5rem;
     font-family: Consolas;
     font-weight: 400;
     margin: 20px;
+    text-align: center;
 }
 
 .jobDetails {
-    font-size: 1.5rem;
     text-align: center;
-    margin: 10px;
     font-weight: 300;
     color: #0E83B8;
 }
@@ -54,14 +52,6 @@
     width: 30%;
 }
 
-.lisamDetailCard {
-    height: 175px;
-}
-
-.freelanceDetailCard {
-    height: 175px;
-}
-
 .lisamDetailCard:hover {
     background-color: #0E83B8;
     color: white;
@@ -69,7 +59,6 @@
 
 .cardHeader {
     text-align: center;
-    font-size: 1.2rem;
     margin: 0;
 }
 
@@ -81,7 +70,6 @@
 .extLink {
    color: #0E83B8;
    text-align: center;
-   font-size: 1.2rem;
 }
 
 .extLink:hover {
@@ -95,4 +83,87 @@
     flex-direction: row;
     justify-content: space-around;
     margin-top: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+    .subHeader {
+        font-size: 1rem;
+    }
+
+    .dates, .jobDetails {
+        font-size: .9rem;
+        margin: 5px;
+    }
+
+    .cardHeader, .extLink {
+        font-size: .9rem;
+    }
+
+    .cardDescription {
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .subHeader {
+        font-size: 1.3rem;
+    }
+
+    .dates, .jobDetails {
+        font-size: 1.2rem;
+        margin: 5px;
+    }
+
+    .cardHeader, .extLink {
+        font-size: 1rem;
+    }
+
+    .cardDescription {
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .sectionHeader {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .subHeader {
+        font-size: 2rem;
+    }
+
+    .dates, .jobDetails {
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+
+    .cardHeader, .extLink {
+        font-size: 1.2rem;
+    }
+
+    .cardDescription {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .detailRow {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lisamDetailCard, .freelanceDetailCard {
+        width: 95%;
+        margin: 3px 0;
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .lisamDetailCard, .freelanceDetailCard {
+        height: 230px;
+        padding: 20px;
+    }
 }

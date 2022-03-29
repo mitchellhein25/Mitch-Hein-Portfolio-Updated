@@ -1,4 +1,15 @@
 .mainContainer {
     margin: auto;
-    max-width: 80%;
+}
+
+@media only screen and (max-width: 1260px) {
+    .mainContainer {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1260px) {
+    .mainContainer {
+        max-width: 80%;
+    }
 }

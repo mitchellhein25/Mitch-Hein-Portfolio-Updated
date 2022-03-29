@@ -62,7 +62,7 @@ export default function NavBar({ websiteTitle, links }: NavBarProps) {
                                         onClick={() => setOpen(!open)}
                                         className={navBarStyles.transition}
                                     />
-                                    <MobileMenu links={links}></MobileMenu>
+                                    <MobileMenu links={links} open={open} setOpen={setOpen}></MobileMenu>
                                 </div>
                                 }
                         </div>

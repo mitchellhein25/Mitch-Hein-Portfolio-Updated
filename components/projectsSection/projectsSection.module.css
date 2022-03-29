@@ -1,6 +1,6 @@
 .sectionHeader {
     color: #0E83B8;
-    font-size: 70px;
+    font-size: 5rem;
     margin-bottom: 20px;
     padding-top: 50px;
 }
@@ -55,4 +55,10 @@
     text-decoration: underline;
     color: black;
     font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+    .sectionHeader {
+        font-size: 3rem;
+    }
 }
