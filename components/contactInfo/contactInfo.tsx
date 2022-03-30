@@ -31,7 +31,7 @@ export default function ContactInfo({ }) {
                         width={30}
                         height={30}
                     />
-                    <a href="https://github.com/mitchellhein25" target="_blank" className={styles.extLink}>
+                    <a href="https://github.com/mitchellhein25" target="_blank" rel="noreferrer" className={styles.extLink}>
                         github.com/mitchellhein25
                     </a>
                 </div>

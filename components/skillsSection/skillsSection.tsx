@@ -1,7 +1,11 @@
 import Image from 'next/image'
+import useWindowSize from '../utils'
 import styles from './skillsSection.module.css'
 
 export default function SkillsSection({ }) {
+    const [width, height] = useWindowSize();
+    const breakpoint = 600;
+
     return (
         <div id="skills" className={styles.sectionContainer}>
             <h2 className={styles.sectionHeader}>Skills</h2>
@@ -37,19 +41,22 @@ export default function SkillsSection({ }) {
                             />
                         </div>
                     </div>
-                    <div className={styles.detailCard}>
-                        <div>
-                            <h5 className={styles.cardHeader}>Javascript</h5>
-                        </div>
-                        <div className={styles.logo}>
-                            <Image
-                                src="/images/javascript-logo.svg"
-                                alt="Javascript logo"
-                                width={100}
-                                height={100}
-                            />
-                        </div>
-                    </div>
+                    {width > breakpoint ?
+                        <div className={styles.detailCard}>
+                            <div>
+                                <h5 className={styles.cardHeader}>Javascript</h5>
+                            </div>
+                            <div className={styles.logo}>
+                                <Image
+                                    src="/images/javascript-logo.svg"
+                                    alt="Javascript logo"
+                                    width={100}
+                                    height={100}
+                                />
+                            </div>
+                        </div> : null
+                    }
+                    {width > breakpoint ?
                     <div className={styles.detailCard}>
                         <div>
                             <h5 className={styles.cardHeader}>HTML</h5>
@@ -62,9 +69,41 @@ export default function SkillsSection({ }) {
                                 height={100}
                             />
                         </div>
-                    </div>
+                        </div> : null
+                    }
                 </div>
-                {/* Row 2*/}
+                {/* Row 2 Mobile*/}
+                {width > breakpoint ? null :
+                    <div className={styles.detailRow}>
+                        <div className={styles.detailCard}>
+                            <div>
+                                <h5 className={styles.cardHeader}>Javascript</h5>
+                            </div>
+                            <div className={styles.logo}>
+                                <Image
+                                    src="/images/javascript-logo.svg"
+                                    alt="Javascript logo"
+                                    width={100}
+                                    height={100}
+                                />
+                            </div>
+                        </div>
+                        <div className={styles.detailCard}>
+                            <div>
+                                <h5 className={styles.cardHeader}>HTML</h5>
+                            </div>
+                            <div className={styles.logo}>
+                                <Image
+                                    src="/images/html-logo.svg"
+                                    alt="HTML logo"
+                                    width={100}
+                                    height={100}
+                                />
+                            </div>
+                        </div>
+                    </div>
+                }
+                {/* Row 3 Mobile*/}
                 <div className={styles.detailRow}>
                     <div className={styles.detailCard}>
                         <div>
@@ -92,6 +131,7 @@ export default function SkillsSection({ }) {
                             />
                         </div>
                     </div>
+                    {width > breakpoint ?
                     <div className={styles.detailCard}>
                         <div>
                             <h5 className={styles.cardHeader}>Dart</h5>
@@ -104,8 +144,27 @@ export default function SkillsSection({ }) {
                                 height={100}
                             />
                         </div>
-                    </div>
+                        </div> : null
+                    }
                 </div>
+                {/* Row 4 Mobile */}
+                {width > breakpoint ? null :
+                    <div className={styles.detailRow}>
+                        <div className={styles.detailCard}>
+                            <div>
+                                <h5 className={styles.cardHeader}>Dart</h5>
+                            </div>
+                            <div className={styles.logo}>
+                                <Image
+                                    src="/images/Dart-logo.png"
+                                    alt="Dart logo"
+                                    width={100}
+                                    height={100}
+                                />
+                            </div>
+                        </div>
+                    </div>
+                }
             </div>
             <div>
                 <h3 className={styles.subHeader}>Libraries & Frameworks</h3>
@@ -139,34 +198,69 @@ export default function SkillsSection({ }) {
                             />
                         </div>
                     </div>
-                    <div className={styles.detailCard}>
-                        <div>
-                            <h5 className={styles.cardHeader}>Node</h5>
-                        </div>
-                        <div className={styles.logo}>
-                            <Image
-                                src="/images/node-logo.svg"
-                                alt="Node logo"
-                                width={100}
-                                height={100}
-                            />
-                        </div>
-                    </div>
-                    <div className={styles.detailCard}>
-                        <div>
-                            <h5 className={styles.cardHeader}>Express</h5>
-                        </div>
-                        <div className={styles.logo}>
-                            <Image
-                                src="/images/express-logo.svg"
-                                alt="Express logo"
-                                width={100}
-                                height={100}
-                            />
-                        </div>
-                    </div>
+                    {width > breakpoint ?
+                        <div className={styles.detailCard}>
+                            <div>
+                                <h5 className={styles.cardHeader}>Node</h5>
+                            </div>
+                            <div className={styles.logo}>
+                                <Image
+                                    src="/images/node-logo.svg"
+                                    alt="Node logo"
+                                    width={100}
+                                    height={100}
+                                />
+                            </div>
+                        </div> : null
+                    }
+                    {width > breakpoint ?
+                        <div className={styles.detailCard}>
+                            <div>
+                                <h5 className={styles.cardHeader}>Express</h5>
+                            </div>
+                            <div className={styles.logo}>
+                                <Image
+                                    src="/images/express-logo.svg"
+                                    alt="Express logo"
+                                    width={100}
+                                    height={100}
+                                />
+                            </div>
+                        </div> : null
+                    }
                 </div>
-                {/*Row 2*/}
+                {/*Row 2 Mobile*/}
+                {width > breakpoint ? null :
+                    <div className={styles.detailRow}>
+                        <div className={styles.detailCard}>
+                            <div>
+                                <h5 className={styles.cardHeader}>Node</h5>
+                            </div>
+                            <div className={styles.logo}>
+                                <Image
+                                    src="/images/node-logo.svg"
+                                    alt="Node logo"
+                                    width={100}
+                                    height={100}
+                                />
+                            </div>
+                        </div>
+                        <div className={styles.detailCard}>
+                            <div>
+                                <h5 className={styles.cardHeader}>Express</h5>
+                            </div>
+                            <div className={styles.logo}>
+                                <Image
+                                    src="/images/express-logo.svg"
+                                    alt="Express logo"
+                                    width={100}
+                                    height={100}
+                                />
+                            </div>
+                        </div>
+                    </div>
+                }
+                {/*Row 3 Mobile*/}
                 <div className={styles.detailRow}>
                     <div className={styles.detailCard}>
                         <div>
@@ -194,20 +288,40 @@ export default function SkillsSection({ }) {
                             />
                         </div>
                     </div>
-                    <div className={styles.detailCard}>
-                        <div>
-                            <h5 className={styles.cardHeader}>Flutter</h5>
-                        </div>
-                        <div className={styles.logo}>
-                            <Image
-                                src="/images/flutter-logo.svg"
-                                alt="Flutter logo"
-                                width={100}
-                                height={100}
-                            />
+                    {width > breakpoint ?
+                        <div className={styles.detailCard}>
+                            <div>
+                                <h5 className={styles.cardHeader}>Flutter</h5>
+                            </div>
+                            <div className={styles.logo}>
+                                <Image
+                                    src="/images/flutter-logo.svg"
+                                    alt="Flutter logo"
+                                    width={100}
+                                    height={100}
+                                />
+                            </div>
+                        </div> : null
+                    }
+                </div>
+                {/*Row 4 Mobile*/}
+                {width > breakpoint ? null :
+                    <div className={styles.detailRow}>
+                        <div className={styles.detailCard}>
+                            <div>
+                                <h5 className={styles.cardHeader}>Flutter</h5>
+                            </div>
+                            <div className={styles.logo}>
+                                <Image
+                                    src="/images/flutter-logo.svg"
+                                    alt="Flutter logo"
+                                    width={100}
+                                    height={100}
+                                />
+                            </div>
                         </div>
                     </div>
-                </div>
+                }
                 <div>
                     <h3 className={styles.subHeader}>Tools & Platforms</h3>
                 </div>
@@ -222,8 +336,8 @@ export default function SkillsSection({ }) {
                                 <Image
                                     src="/images/visualstudio-logo.svg"
                                     alt="Visual Studio logo"
-                                    width={100}
-                                    height={100}
+                                    width={80}
+                                    height={80}
                                 />
                             </div>
                         </div>
@@ -240,34 +354,69 @@ export default function SkillsSection({ }) {
                                 />
                             </div>
                         </div>
-                        <div className={styles.detailCard}>
-                            <div>
-                                <h5 className={styles.cardHeader}>PyCharm</h5>
-                            </div>
-                            <div className={styles.logo}>
-                                <Image
-                                    src="/images/pycharm-logo.svg"
-                                    alt="Pycharm logo"
-                                    width={100}
-                                    height={100}
-                                />
-                            </div>
-                        </div>
-                        <div className={styles.detailCard}>
-                            <div>
-                                <h5 className={styles.cardHeader}>Beautiful Soup</h5>
-                            </div>
-                            <div className={styles.logo}>
-                                <Image
-                                    src="/images/beautifulsoup-logo.svg"
-                                    alt="Beautiful Soup logo"
-                                    width={100}
-                                    height={100}
-                                />
-                            </div>
-                        </div>
+                        {width > breakpoint ?
+                            <div className={styles.detailCard}>
+                                <div>
+                                    <h5 className={styles.cardHeader}>PyCharm</h5>
+                                </div>
+                                <div className={styles.logo}>
+                                    <Image
+                                        src="/images/pycharm-logo.svg"
+                                        alt="Pycharm logo"
+                                        width={100}
+                                        height={100}
+                                    />
+                                </div>
+                            </div> : null
+                        }
+                        {width > breakpoint ?
+                            <div className={styles.detailCard}>
+                                <div>
+                                    <h5 className={styles.cardHeader}>Beautiful Soup</h5>
+                                </div>
+                                <div className={styles.logo}>
+                                    <Image
+                                        src="/images/beautifulsoup-logo.svg"
+                                        alt="Beautiful Soup logo"
+                                        width={80}
+                                        height={80}
+                                    />
+                                </div>
+                            </div> : null
+                        }
                     </div>
-                    {/*Row 2*/}
+                    {/*Row 2 Mobile*/}
+                    {width > breakpoint ? null :
+                        <div className={styles.detailRow}>
+                            <div className={styles.detailCard}>
+                                <div>
+                                    <h5 className={styles.cardHeader}>PyCharm</h5>
+                                </div>
+                                <div className={styles.logo}>
+                                    <Image
+                                        src="/images/pycharm-logo.svg"
+                                        alt="Pycharm logo"
+                                        width={100}
+                                        height={100}
+                                    />
+                                </div>
+                            </div>
+                            <div className={styles.detailCard}>
+                                <div>
+                                    <h5 className={styles.cardHeader}>Beautiful Soup</h5>
+                                </div>
+                                <div className={styles.logo}>
+                                    <Image
+                                        src="/images/beautifulsoup-logo.svg"
+                                        alt="Beautiful Soup logo"
+                                        width={80}
+                                        height={80}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    {/*Row 3 Mobile*/}
                     <div className={styles.detailRow}>
                         <div className={styles.detailCard}>
                             <div>
@@ -295,34 +444,69 @@ export default function SkillsSection({ }) {
                                 />
                             </div>
                         </div>
-                        <div className={styles.detailCard}>
-                            <div>
-                                <h5 className={styles.cardHeader}>Git</h5>
-                            </div>
-                            <div className={styles.logo}>
-                                <Image
-                                    src="/images/git-logo.svg"
-                                    alt="Git logo"
-                                    width={100}
-                                    height={100}
-                                />
-                            </div>
-                        </div>
-                        <div className={styles.detailCard}>
-                            <div>
-                                <h5 className={styles.cardHeader}>Heroku</h5>
-                            </div>
-                            <div className={styles.logo}>
-                                <Image
-                                    src="/images/heroku-logo.svg"
-                                    alt="Heroku logo"
-                                    width={100}
-                                    height={100}
-                                />
-                            </div>
-                        </div>
+                        {width > breakpoint ?
+                            <div className={styles.detailCard}>
+                                <div>
+                                    <h5 className={styles.cardHeader}>Git</h5>
+                                </div>
+                                <div className={styles.logo}>
+                                    <Image
+                                        src="/images/git-logo.svg"
+                                        alt="Git logo"
+                                        width={100}
+                                        height={100}
+                                    />
+                                </div>
+                            </div> : null
+                        }
+                        {width > breakpoint ?
+                            <div className={styles.detailCard}>
+                                <div>
+                                    <h5 className={styles.cardHeader}>Heroku</h5>
+                                </div>
+                                <div className={styles.logo}>
+                                    <Image
+                                        src="/images/heroku-logo.svg"
+                                        alt="Heroku logo"
+                                        width={100}
+                                        height={100}
+                                    />
+                                </div>
+                            </div> : null
+                        }
                     </div>
-                    {/*Row 3*/}
+                    {/*Row 4 Mobile*/}
+                    {width > breakpoint ? null :
+                        <div className={styles.detailRow}>
+                            <div className={styles.detailCard}>
+                                <div>
+                                    <h5 className={styles.cardHeader}>Git</h5>
+                                </div>
+                                <div className={styles.logo}>
+                                    <Image
+                                        src="/images/git-logo.svg"
+                                        alt="Git logo"
+                                        width={100}
+                                        height={100}
+                                    />
+                                </div>
+                            </div>
+                            <div className={styles.detailCard}>
+                                <div>
+                                    <h5 className={styles.cardHeader}>Heroku</h5>
+                                </div>
+                                <div className={styles.logo}>
+                                    <Image
+                                        src="/images/heroku-logo.svg"
+                                        alt="Heroku logo"
+                                        width={100}
+                                        height={100}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    {/*Row 5 Mobile*/}
                     <div className={styles.detailRow}>
                         <div className={styles.detailCard}>
                             <div>

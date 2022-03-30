@@ -8,7 +8,7 @@ export default function ExperienceSection({ }) {
                 <h3 className={styles.subHeader}>Product Developer &nbsp; <span className={styles.gray}>@ Lisam Systems</span></h3>
             </div>
             <div>
-                <h4 className={styles.dates}>July 2020 &#8211; Present // Bryan, TX</h4>
+                <h4 className={styles.dates}>July 2020 &#8211; Present &#47;&#47; Bryan, TX</h4>
             </div>
             <div className={styles.detailContainer}>
                 <h4 className={styles.jobDetails}>Job Details</h4>
@@ -112,7 +112,7 @@ export default function ExperienceSection({ }) {
                 <h3 className={styles.subHeader}>Web Developer &nbsp; <span className={styles.gray}>@ Freelance</span></h3>
             </div>
             <div>
-                <h4 className={styles.dates}>January 2021 &#8211; Present // College Station, TX</h4>
+                <h4 className={styles.dates}>January 2021 &#8211; Present &#47;&#47; College Station, TX</h4>
             </div>
             <div className={styles.detailContainer}>
                 <h4 className={styles.jobDetails}>Work</h4>
@@ -120,7 +120,7 @@ export default function ExperienceSection({ }) {
                     <div className={styles.freelanceDetailCard}>
                         <div>
                             <h5 className={styles.cardHeader}>bcsrei.com&nbsp;
-                                <span className={styles.frameworkUsed}>// React, Next.js, Vercel</span>
+                                <span className={styles.frameworkUsed}>&#47;&#47; React, Next.js, Vercel</span>
                             </h5>
                         </div>
                         <p className={styles.cardDescription}>
@@ -128,25 +128,25 @@ export default function ExperienceSection({ }) {
                             changes utilizing state.
                         </p>
                         <div className={styles.extLink}>
-                            <a href='https://www.bcsrei.com' target="_blank">
-                                Check it out    ->
+                            <a href='https://www.bcsrei.com' target="_blank" rel="noreferrer">
+                                Check it out    -&gt;
                             </a>
                         </div>
                     </div>
                     <div className={styles.freelanceDetailCard}>
                         <div>
                             <h5 className={styles.cardHeader}>crossfitaggieland.com&nbsp;
-                                <span className={styles.frameworkUsed}>// Wordpress</span>
+                                <span className={styles.frameworkUsed}>&#47;&#47; Wordpress</span>
                             </h5>
                         </div>
                         <p className={styles.cardDescription}>
                             Full website redesign for a local Crossfit gym.
                             <div className={styles.cfaRow}>
                                 <div className={styles.extLink}>
-                                    <a href='https://www.loom.com/share/8049deb0130649efb2727ab0b8b7375b' target="_blank">Old Site -></a>
+                                    <a href='https://www.loom.com/share/8049deb0130649efb2727ab0b8b7375b' target="_blank" rel="noreferrer">Old Site -&gt;</a>
                                 </div>
                                 <div className={styles.extLink}>
-                                    <a href='https://www.crossfitaggieland.com' target="_blank">New Site -></a>
+                                    <a href='https://www.crossfitaggieland.com' target="_blank" rel="noreferrer">New Site -&gt;</a>
                                 </div>
                             </div>
                         </p>
@@ -154,15 +154,15 @@ export default function ExperienceSection({ }) {
                     <div className={styles.freelanceDetailCard}>
                         <div>
                             <h5 className={styles.cardHeader}>hannahclardyphotos.com&nbsp;
-                                <span className={styles.frameworkUsed}>// SquareSpace</span>
+                                <span className={styles.frameworkUsed}>&#47;&#47; SquareSpace</span>
                             </h5>
                         </div>
                         <p className={styles.cardDescription}>
                             Basic portfolio website for a local photographer.
                         </p>
                         <div className={styles.extLink}>
-                            <a href='https://www.hannahclardyphotos.com' target="_blank">
-                                Check it out ->
+                            <a href='https://www.hannahclardyphotos.com' target="_blank" rel="noreferrer">
+                                Check it out -&gt;
                             </a>
                         </div>
                     </div>
