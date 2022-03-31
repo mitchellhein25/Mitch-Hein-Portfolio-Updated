@@ -81,10 +81,6 @@
 }
 
 @media only screen and (min-width: 900px) {
-    .sectionHeader {
-        font-size: 3rem;
-    }
-
     .detailCard {
         width: 15%;
     }
