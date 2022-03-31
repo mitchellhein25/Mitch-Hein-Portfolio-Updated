@@ -12,8 +12,7 @@ export const links = [
 ]
 
 export const websiteTitle = 'Mitch Hein';
-export const pageTitle = '';
-export const bannerTitle1 = '';
+export const pageTitle = 'Mitch Hein Portfolio';
 
 interface Children  {
     children: any;
@@ -25,7 +24,7 @@ export default function MainLayout({ children }:Children) {
             <NavBar websiteTitle={websiteTitle} links={links}></NavBar>
             <Head>
                 <title>{pageTitle}</title>
-                <link rel="shortcut icon" href="/icons/favicon.svg" />
+                <link rel="Tab icon" href="/images/favicon.svg" />
             </Head>
             <main className={styles.mainContainer}>{children}</main>
         </div>
