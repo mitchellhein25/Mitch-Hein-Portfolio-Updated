@@ -376,7 +376,7 @@ export default function SkillsSection({ }) {
                                 />
                             </div>
                         </div>
-                    </div> : null
+                    </div> : null 
                 }
                 {/*Row 4 Mobile*/}
                 {width > breakpoint ? null :
