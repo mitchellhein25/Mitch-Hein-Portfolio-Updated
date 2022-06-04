@@ -39,6 +39,21 @@ export default function ProjectsSection({ }) {
                     </div>
                 </div>
             </div>
+            <div className={styles.detailRow}>
+                <div className={styles.detailCard}>
+                    <div>
+                        <h5 className={styles.cardHeader}>Crowd-Sourced Fitness Mobile App</h5>
+                    </div>
+                    <div>
+                        <iframe src="https://youtube.com/embed/02tVGuKJZUQ"
+                            frameBorder="0" allowFullScreen
+                            width={width * .8}
+                            height={width > breakpoint ? height * .5 : height * .3}
+                        >
+                        </iframe>
+                    </div>
+                </div>
+            </div>
         </div>
         )
 }
